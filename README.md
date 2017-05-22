@@ -1,15 +1,15 @@
-# hackathon
+# Hackathon
 
 
-The `primechain-hackathon` blockchain can be accessed by connecting your application to the primary node on **139.59.74.107**
+The `primechain-hackathon` blockchain can be accessed by connecting your application to `139.59.74.107`
 
 You will need the following credentials:
 
-**RPC username:** dendentgod
+**RPC username:** `dendentgod`
 
-**RPC password:** xi1olai6ooc5mohzoloo3ze6goh5air8ueXiequ1
+**RPC password:** `xi1olai6ooc5mohzoloo3ze6goh5air8ueXiequ1`
 
-**RPC port:** 15590
+**RPC port:** `15590`
 
 ## Resources:
 
