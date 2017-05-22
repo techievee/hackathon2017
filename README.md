@@ -1,7 +1,7 @@
 # hackathon
 
 
-The blockchain can be accessed by connecting your application to the primary node on **139.59.74.107**
+The `primechain-hackathon` blockchain can be accessed by connecting your application to the primary node on **139.59.74.107**
 
 You will need the following credentials:
 
@@ -19,4 +19,4 @@ You will need the following credentials:
 
 - You can access the blockchain explorer at: http://139.59.74.107:2750/
 
-- For Libraries and Tools for C#, Java, Javascript, PHP, Python, Ruby, see: http://www.multichain.com/developers
+- Wrappers are available for [C#](https://github.com/PbjCloud/MultiChainLib), [Java](https://github.com/SimplyUb/MultiChainJavaAPI), [Javascript](https://github.com/scoin/multichain-node), [PHP](https://github.com/Kunstmaan/libphp-multichain), [Python](https://github.com/DXMarkets/Savoir), [Ruby](https://github.com/theodi/multichain-client).
