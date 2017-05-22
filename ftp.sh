@@ -11,8 +11,8 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 
 username=$(whoami)
-ftpusername=$1
-ftppasswd=$2
+ftpusername=`gpw 1 10`
+ftppasswd=`pwgen 20 1`
 
 echo '----------------------------------------'
 echo -e ${CYAN}${bold}'INSTALLING PREREQUISITES.....'${normal}${LIGHTYELLOW}
@@ -59,3 +59,7 @@ echo -e 'SECURE FTP SUCCESSFULLY SET UP!'
 echo -e '----------------------------------------'${normal}${NC}
 echo ''
 echo ''
+
+echo -e ${normal}${CYAN}'User Name - '${bold}${LIGHTYELLOW}$ftpusername
+echo -e ${normal}${CYAN}'Password - '${bold}${LIGHTYELLOW}$ftppasswd
+echo -e ${normal}${NC}

@@ -154,5 +154,7 @@ echo ''
 echo -e ${CYAN}${bold}'----------HARDENING SUCCESSFUL----------'${normal}${NC}
 echo ''
 echo ''
-echo ''
-echo ''
+
+echo -e ${normal}${CYAN}'User Name - '${bold}${LIGHTYELLOW}$username
+echo -e ${normal}${CYAN}'Password - '${bold}${LIGHTYELLOW}$passwd
+echo -e ${normal}${NC}
