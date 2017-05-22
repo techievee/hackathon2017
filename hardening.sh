@@ -12,7 +12,7 @@ normal=$(tput sgr0)
 sudo apt-get -y install pwgen gpw
 
 username='yobiuser'
-passwd=`pwgen 20 1`		#Getting password from command line args
+passwd=`pwgen 40 1`		#Getting password from command line args
 
 # Update the system
 echo '----------------------------------------'

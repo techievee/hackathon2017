@@ -13,7 +13,7 @@ sudo apt-get -y install pwgen gpw
 
 chainname='primechain-hackathon'
 rpcuser=`gpw 1 10`
-rpcpassword=`pwgen 20 1`
+rpcpassword=`pwgen 40 1`
 repodir=`pwd`
 assetName='yobicoin'
 protocol=10007

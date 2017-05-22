@@ -12,7 +12,7 @@ normal=$(tput sgr0)
 
 username=$(whoami)
 ftpusername=`gpw 1 10`
-ftppasswd=`pwgen 20 1`
+ftppasswd=`pwgen 40 1`
 
 echo '----------------------------------------'
 echo -e ${CYAN}${bold}'INSTALLING PREREQUISITES.....'${normal}${LIGHTYELLOW}
