@@ -14,7 +14,7 @@ function execute(button, command, output)
 				if (button != null) {
 					button.disabled = false;
 				}
-				if (xmlhttp.status == 200) {
+				if (xmlhttp.status == 200 || xmlhttp.status == 500) {
 					output.innerHTML = xmlhttp.responseText;
 				}
 			}
