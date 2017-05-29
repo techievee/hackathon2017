@@ -5,9 +5,9 @@ The `primechain-hackathon` blockchain can be accessed by connecting your applica
 
 You will need the following credentials:
 
-**RPC username:** `dendentgod`
+**RPC username:** `istescamps`
 
-**RPC password:** `xi1olai6ooc5mohzoloo3ze6goh5air8ueXiequ1`
+**RPC password:** `cooL4dooShuJoongaacahphei4aJi9nashaeteew`
 
 **RPC port:** `15590`
 
