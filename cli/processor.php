@@ -1,14 +1,21 @@
 <?php
+	ob_start();
+	error_reporting(E_ALL);
 
 	try {
 		require_once 'pest/PestJSON.php';
 		require_once 'config.php';
+		require_once 'resources.php';
 		require_once 'helperFunctions.php';
 
 		$pest = new PestJSON('http://'.MultichainParams::HOST_NAME.':'.MultichainParams::RPC_PORT);
 		$pest->curl_opts[CURLOPT_FOLLOWLOCATION] = false; // Not supported on hosts running safe_mode!
 		$command = explode(' ', trim($_POST['command']));
 		$method = $command[0];
+		if (!in_array($method, Literals::MULTICHAIN_COMMANDS)) {
+			throw new Exception("Error Processing Request", 1);
+		}
+
 		$params = array_splice($command, 1);
 		$paramsNew = array();
 
@@ -53,8 +60,9 @@
 	}
 	catch (exception $ex)
 	{
+		header("HTTP/1.0 500");
 		echo "<font color='red'><b>".$ex->getMessage()."</b></font>";
 	}
 		
-
+	ob_end_flush();
 ?>
