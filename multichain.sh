@@ -16,7 +16,7 @@ rpcuser=`gpw 1 10`
 rpcpassword=`pwgen 40 1`
 repodir=`pwd`
 assetName='yobicoin'
-protocol=10007
+protocol=10009
 networkport=61172
 rpcport=15590
 explorerport=2750
@@ -85,7 +85,7 @@ wget --no-verbose http://www.multichain.com/download/multichain-latest.tar.gz
 sudo bash -c 'tar xvf multichain-latest.tar.gz'
 sudo bash -c 'cp multichain-1.0*/multichain* /usr/local/bin/'
 
-su -l $username -c  'multichain-util create '$chainname $protocol
+su -l $username -c  'multichain-util create '$chainname #$protocol
 
 su -l $username -c "sed -ie 's/.*root-stream-open =.*\#/root-stream-open = false     #/g' /home/"$username"/.multichain/$chainname/params.dat"
 su -l $username -c "sed -ie 's/.*mining-requires-peers =.*\#/mining-requires-peers = true     #/g' /home/"$username"/.multichain/$chainname/params.dat"
