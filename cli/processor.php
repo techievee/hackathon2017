@@ -49,12 +49,13 @@
 		// echo json_encode($json)."<br>";
 		$responsearray = $pest->post('/', $json, $header);
 		
-		if (is_null($responsearray['error']))
+		if (is_null($responsearray['error'])) {
 			$output_str = json_encode($responsearray['result']);
 			$output_str = str_replace('\\n', '<br>', $output_str);
 			$output_str = str_replace('multichain', '', $output_str);
 			$output_str = indent($output_str);
 			print_r($output_str);
+		}
 		else
 			throw new Exception($responsearray['error']['message'], 1);
 		
