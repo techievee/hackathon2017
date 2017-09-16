@@ -52,10 +52,10 @@
 		if (is_null($responsearray['error'])) {
 			$output_str = json_encode($responsearray['result']);
 			$output_str = str_replace('\\n', '<br>', $output_str);
-			$output_str = str_replace('multichain', '', $output_str);
+			$output_str = str_ireplace('multichain', '', $output_str);
 			$output_str = preg_split('/examples/i', $output_str)[0];
-			$output_str = trim($output_str,'"');
 			$output_str = indent($output_str);
+			$output_str = trim($output_str,'"');
 			print_r($output_str);
 		}
 		else
