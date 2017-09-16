@@ -16,12 +16,13 @@ echo -e ${CYAN}${bold}'RESTORING.....'${normal}${NC}
 echo '----------------------------------------'
 
 ps axf | grep 'multichaind '$chainname | grep -v grep | awk '{print "kill -9 " $1}' | sh
-rm -rf /home/$username/.multichain/*
+rm -rf /home/$username/.multichain/$chainname
 rm -rf /var/www/html/hashchain
 rm -rf /var/www/html/yobiapps
 rm -rf /var/www/html/multichain-web-demo
 ps axf | grep 'python -m Mce.abe --config' | grep -v grep | awk '{print "kill -9 " $1}' | sh
 rm -rf /home/$username/multichain-explorer/
+rm -rf /home/$username/$chainname.explorer.sqlite
 rm -rf /home/$username/multichain-1.0*
 rm -rf /var/www/html/default_configs
 rm -rf /var/www/html/multichain-1.0*
