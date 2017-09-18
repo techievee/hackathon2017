@@ -9,7 +9,7 @@
 
 <div class="container theme-showcase" role="main">
 
-	<h2>Yobichain-cli</h2>
+	<h2>CLI</h2>
 	<br>
 	<div class="row">
 		<div class="col-md-8">
@@ -19,7 +19,7 @@
 						<a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
 					</div>
 
-					<h2 class="panel-title">Yobichain cli</h2>
+					<h2 class="panel-title">CLI</h2>
 				</header>
 				<div class="panel-body">
 					<div class="mt-repeater-input col-lg-8">
@@ -44,7 +44,7 @@
 			</section>
 		</div>
 
-		<div class="col-lg-4">
+		<!-- <div class="col-lg-4">
 			<div class="alert alert-warning">
 			<span>You may use the following commands to interact with the blockchain. To get more information on a command execute <code>help <i>&lt;command_name&gt;</i></code></span><br><br>
 			<?php
@@ -57,7 +57,7 @@
 				echo "</ul>";
 			?>
 			</div>
-		</div>	
+		</div>	 -->
 
 	</div>
 

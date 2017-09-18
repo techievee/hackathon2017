@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>YobiApps</title>
+    <title>Blockathon</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -44,9 +44,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Yobichain-cli</a>
+          <a class="navbar-brand" href="#">Primechain</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <!-- <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yobichain-cli <span class="caret"></span></a>
@@ -55,6 +55,6 @@
               </ul>
             </li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div> --><!--/.nav-collapse -->
       </div>
     </nav>
