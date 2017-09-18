@@ -67,7 +67,7 @@
 	catch (exception $ex)
 	{
 		header("HTTP/1.0 500");
-		echo "<font color='red'><b>".$ex->getMessage()."</b></font>";
+		echo "<font color='red'><b>".str_replace('\\n', '<br>', $ex->getMessage())."</b></font>";
 	}
 		
 	ob_end_flush();
