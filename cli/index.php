@@ -19,7 +19,7 @@
 						<a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
 					</div>
 
-					<h2 class="panel-title">CLI</h2>
+					<h2 class="panel-title">Primechain</h2>
 				</header>
 				<div class="panel-body">
 					<div class="mt-repeater-input col-lg-8">
