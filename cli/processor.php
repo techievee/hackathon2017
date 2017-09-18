@@ -12,9 +12,9 @@
 		$pest->curl_opts[CURLOPT_FOLLOWLOCATION] = false; // Not supported on hosts running safe_mode!
 		$command = explode(' ', trim($_POST['command']));
 		$method = $command[0];
-		if (!in_array($method, Literals::MULTICHAIN_COMMANDS)) {
+		/*if (!in_array($method, Literals::MULTICHAIN_COMMANDS)) {
 			throw new Exception("Invalid command", 1);
-		}
+		}*/
 
 		$params = array_splice($command, 1);
 		$paramsNew = array();
